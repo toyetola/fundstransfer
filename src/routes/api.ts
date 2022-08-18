@@ -11,22 +11,23 @@ const router = Router()
 const version = process.env.APP_VERSION || "v1";
 
 router.get('/', (req, res) => {
+    res.setHeader('content-type', 'text/html');
     res.send(`
-        Welcome to Money Transfer API
+        Welcome to Money Transfer API! <br/> <br/>
         
-        Here are the uris you can test out:
+        Here are the uris you can test out: <br/> <br/>
 
-        Create Account  - /api/v1/signup 
+        Create Account  - /api/v1/signup  <br/> <br/>
 
-        Login to your Account /api/v1/login 
+        Login to your Account /api/v1/login <br/> <br/>
 
-        Fund your wallet /api/v1/fundWallet 
+        Fund your wallet /api/v1/fundWallet <br/> <br/>
         
-        Withdraw /api/v1/withdraw 
+        Withdraw /api/v1/withdraw  <br/> <br/>
 
-        Send Funds to another account /api/v1/sendMoney 
+        Send Funds to another account /api/v1/sendMoney <br/> <br/>
 
-        Get your account details /api/v1/getAccountDetails 
+        Get your account details /api/v1/getAccountDetails <br/> <br/>
 
         Get your account Balnce /api/v1/getMyAccountBalance 
 
