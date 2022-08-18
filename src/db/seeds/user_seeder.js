@@ -11,8 +11,16 @@ exports.seed = async function(knex) {
       firstname: 'Lola', 
       lastname: 'rowValue1', 
       email: 'test@gmail.com',
-      password:'mypassword',
+      password:'$2b$10$M/9ejAUafINC5Da/9BOq4uuFTRnQJDQn6f8XB9DDMJmx8xQRmaVyS',
       account_number:'3467849533'
+    },
+    {
+      id: 2, 
+      firstname: 'Bee', 
+      lastname: 'Joe', 
+      email: 'test1@gmail.com',
+      password:'$2b$10$M/9ejAUafINC5Da/9BOq4uuFTRnQJDQn6f8XB9DDMJmx8xQRmaVyS',
+      account_number:'3467849534'
     }
   ]);
 };

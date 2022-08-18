@@ -1,1 +1,1 @@
-web: node dist/src/index.js
+web: node dist/src/index.js knex migrate:rollback && knex:migrate:latest
