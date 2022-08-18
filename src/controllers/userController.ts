@@ -34,7 +34,6 @@ const createAccount = async (req:Request, res:Response, next:any) =>{
             account_number:account_number
           })
         const createWallet = await db("wallets").insert({user_id:result[0]})  
-        console.log(result)
         res.status(201).json({
             data: {firstname:firstname, lastname:lastname, email:email}, message:"Please login to continue"
         });

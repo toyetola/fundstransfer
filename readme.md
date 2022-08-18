@@ -36,6 +36,8 @@ https://ldqr-fundstransfer.herokuapp.com/
 
 Ensure you have set TEST_DATABASE_NAME to a different database in your ```.env``` file. This database will be used to house your data while the test is running so that the development database is not tampered with during tests.
 
+![Test Passed](./src/public/lendsqr-test.JPG)
+
 Run ```npm run test```
 
 To manually migrate and rollback migration in test environment;
