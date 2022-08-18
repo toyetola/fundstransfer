@@ -61,7 +61,8 @@ const login =  async (req:Request, res:Response) => {
             const accessToken = await sign({ userId: user.id, iss: process.env.APP_URL}, process.env.PUBLIC_KEY, {
                 expiresIn: "1h"
             });
-               
+        
+            
         // console.log(accessToken)
         // user.access_token = accessToken;
         const result = await db('users').where('id', '=', user.id).update({'access_token':accessToken})
